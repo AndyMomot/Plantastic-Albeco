@@ -1,0 +1,14 @@
+xcassets:
+  - inputs:
+    - PlantasticAlbeco/Resources/Images
+    outputs:
+      - templateName: swift5
+        output: PlantasticAlbeco/Resources/Images/Images.generated.swift
+fonts:
+  - inputs: PlantasticAlbeco/Resources/Fonts
+    outputs:
+    - templateName: swift5
+      output: PlantasticAlbeco/Resources/Fonts/Fonts.generated.swift
+      params:
+        enumName: Fonts
+
