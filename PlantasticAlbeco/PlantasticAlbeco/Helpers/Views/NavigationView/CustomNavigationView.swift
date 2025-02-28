@@ -1,68 +1,69 @@
-//
-//  CustomNavigationView.swift
-//  Teslebarten
-//
-//  Created by Andrii Momot on 23.02.2025.
-//
-
 import SwiftUI
 
 struct CustomNavigationView: View {
-    @State private var brandImage: Image?
-    @State private var brandName: String?
+    @State private var level = 0
+    @State private var leafs = 0
     
     var body: some View {
         HStack(spacing: 10) {
-            if let brandImage {
-                brandImage
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 80, height: 40)
-                    .clipShape(RoundedRectangle(cornerRadius: 4))
-            }
+            Asset.сhristmasTree.swiftUIImage
+            Text("Level \(level) Forester")
+                .foregroundStyle(.white)
+                .font(Fonts.SFProDisplay.medium.swiftUIFont(size: 16))
             
             Spacer()
             
-            if let brandName {
-                Text(brandName)
-                    .foregroundStyle(.white)
-                    .font(Fonts.SFProDisplay.semibold.swiftUIFont(size: 14))
-                    .multilineTextAlignment(.center)
-            }
-            
-            Spacer()
-            
-            if let brandImage {
-                brandImage
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 80, height: 40)
-                    .hidden()
-            }
+            Asset.leaf.swiftUIImage
+            Text("\(leafs)")
+                .foregroundStyle(.white)
+                .font(Fonts.SFProDisplay.medium.swiftUIFont(size: 16))
         }
-        .padding(12)
-        .background(.appleRed)
+        .padding()
+        .background(.jadeGreen.opacity(0.9))
         .onAppear {
             Task {
-                await getUser()
+                await getTasks()
             }
         }
     }
 }
 
 private extension CustomNavigationView {
-    func getUser() async {
-        guard let user = DefaultsService.shared.user else { return }
-        await MainActor.run {
-            self.brandName = user.brandName
+    func getTasks() async {
+        let tasks = DefaultsService.shared.tasks
+        
+        var level: Int {
+            switch tasks.count {
+            case ...4:
+                return 1
+            case 5...9:
+                return 2
+            case 10...14:
+                return 3
+            case 15...19:
+                return 4
+            case 20...24:
+                return 5
+            case 25...29:
+                return 6
+            case 30...34:
+                return 7
+            case 35...39:
+                return 8
+            case 40...44:
+                return 9
+            case 45...:
+                return 20
+            default:
+                return .zero
+            }
         }
         
-        let id = user.id + "brand"
-        if let imageData = await FileManagerService().fetchImage(with: id),
-            let uiImage = UIImage(data: imageData) {
-            await MainActor.run {
-                self.brandImage = Image(uiImage: uiImage)
-            }
+        let leafs = tasks.count * 123
+        
+        await MainActor.run {
+            self.level = level
+            self.leafs = leafs
         }
     }
 }

@@ -46,77 +46,17 @@ extension DefaultsService {
         }
     }
     
-    var shifts: [Shift] {
+    var tasks: [UserTask] {
         get {
-            if let data = standard.data(forKey: Keys.shifts.rawValue),
-               let items = try? JSONDecoder().decode([Shift].self, from: data) {
+            if let data = standard.data(forKey: Keys.tasks.rawValue),
+               let items = try? JSONDecoder().decode([UserTask].self, from: data) {
                 return items
             }
             return []
         }
         set {
             if let data = try? JSONEncoder().encode(newValue) {
-                standard.set(data, forKey: Keys.shifts.rawValue)
-            }
-        }
-    }
-    
-    var clients: [Client] {
-        get {
-            if let data = standard.data(forKey: Keys.clients.rawValue),
-               let items = try? JSONDecoder().decode([Client].self, from: data) {
-                return items
-            }
-            return []
-        }
-        set {
-            if let data = try? JSONEncoder().encode(newValue) {
-                standard.set(data, forKey: Keys.clients.rawValue)
-            }
-        }
-    }
-    
-    var tables: [Table] {
-        get {
-            if let data = standard.data(forKey: Keys.tables.rawValue),
-               let items = try? JSONDecoder().decode([Table].self, from: data) {
-                return items
-            }
-            return []
-        }
-        set {
-            if let data = try? JSONEncoder().encode(newValue) {
-                standard.set(data, forKey: Keys.tables.rawValue)
-            }
-        }
-    }
-    
-    var orders: [Order] {
-        get {
-            if let data = standard.data(forKey: Keys.orders.rawValue),
-               let items = try? JSONDecoder().decode([Order].self, from: data) {
-                return items
-            }
-            return []
-        }
-        set {
-            if let data = try? JSONEncoder().encode(newValue) {
-                standard.set(data, forKey: Keys.orders.rawValue)
-            }
-        }
-    }
-    
-    var transaction: [Transaction] {
-        get {
-            if let data = standard.data(forKey: Keys.transaction.rawValue),
-               let items = try? JSONDecoder().decode([Transaction].self, from: data) {
-                return items
-            }
-            return []
-        }
-        set {
-            if let data = try? JSONEncoder().encode(newValue) {
-                standard.set(data, forKey: Keys.transaction.rawValue)
+                standard.set(data, forKey: Keys.tasks.rawValue)
             }
         }
     }
@@ -127,10 +67,6 @@ extension DefaultsService {
     enum Keys: String {
         case flow
         case user
-        case shifts
-        case clients
-        case tables
-        case orders
-        case transaction
+        case tasks
     }
 }

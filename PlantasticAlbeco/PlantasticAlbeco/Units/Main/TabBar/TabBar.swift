@@ -10,7 +10,8 @@ struct TabBar: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             TabView(selection: $viewModel.selection) {
-                Text("home")
+                HomeView()
+                    .environmentObject(viewModel)
                     .tag(TabBarSelectionView.home.rawValue)
                 
                 Text("tasks")
