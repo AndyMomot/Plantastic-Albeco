@@ -3,6 +3,7 @@ import SwiftUI
 struct NextButton: View {
     var imageName: String?
     var title: String
+    var bgColor: Color = .emeraldGreen
     var action: () -> Void
     
     var body: some View {
@@ -28,7 +29,7 @@ struct NextButton: View {
                 Spacer()
             }
             .padding(20)
-            .background(.emeraldGreen)
+            .background(bgColor)
             .clipShape(RoundedRectangle(cornerRadius: 12))
         }
         .buttonStyle(PlainButtonStyle())

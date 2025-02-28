@@ -14,7 +14,7 @@ struct TabBar: View {
                     .environmentObject(viewModel)
                     .tag(TabBarSelectionView.home.rawValue)
                 
-                Text("tasks")
+                TasksView()
                     .tag(TabBarSelectionView.tasks.rawValue)
                 
                 Text("info")

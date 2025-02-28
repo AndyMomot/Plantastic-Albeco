@@ -12,7 +12,7 @@ struct CompletedTasksProgress: View {
     let completedTasks: Int
     
     var body: some View {
-        let progress = Double(allTasks) / Double(completedTasks)
+        let progress = Double(completedTasks) / Double(allTasks)
         
         return VStack(spacing: 12) {
             HStack {
@@ -26,6 +26,8 @@ struct CompletedTasksProgress: View {
                     .foregroundStyle(.emeraldGreen)
                     .font(Fonts.SFProDisplay.regular.swiftUIFont(size: 14))
             }
+            .lineLimit(1)
+            .minimumScaleFactor(0.5)
             
             CustomLinearProgressView(
                 progress: progress,

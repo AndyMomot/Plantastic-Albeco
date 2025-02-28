@@ -59,7 +59,7 @@ private extension CustomNavigationView {
             }
         }
         
-        let leafs = tasks.count * 123
+        let leafs = tasks.filter { $0.isCompleted }.map { $0.type.leafs }.reduce(0) {$0 + $1}
         
         await MainActor.run {
             self.level = level

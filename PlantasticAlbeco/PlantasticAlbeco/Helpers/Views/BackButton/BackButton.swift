@@ -14,11 +14,9 @@ struct BackButton: View {
                     action?()
                     dismiss.callAsFunction()
                 } label: {
-                    Image(systemName: "chevron.left")
-                        .foregroundStyle(.graphite)
+                    Image(systemName: "arrow.left")
+                        .foregroundStyle(.jadeGreen)
                         .padding(14)
-                        .background(.white)
-                        .clipShape(RoundedRectangle(cornerRadius: 6))
                 }
             }
             
@@ -32,19 +30,19 @@ struct BackButton: View {
             Spacer()
             
             if canDismiss {
-                Image(systemName: "chevron.left")
+                Image(systemName: "arrow.left")
+                    .padding(14)
                     .hidden()
             }
         }
-        .foregroundStyle(.appleRed)
-        .font(Fonts.SFProDisplay.bold.swiftUIFont(size: 18))
+        .foregroundStyle(.black)
+        .font(Fonts.SFProDisplay.medium.swiftUIFont(size: 18))
         .navigationBarBackButtonHidden()
     }
 }
 
 #Preview {
     ZStack {
-        Color.green
         VStack(spacing: 20) {
             BackButton(title: "Telefony") {}
             BackButton(title: "Telefony") {}
