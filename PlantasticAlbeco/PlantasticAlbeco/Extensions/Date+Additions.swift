@@ -83,6 +83,11 @@ extension Date {
         
         return value
     }
+    
+    static func getNumber(of component: Calendar.Component) -> Int {
+        let calendar = Calendar.current
+        return calendar.component(component, from: Date())
+    }
 }
 
 extension Date {

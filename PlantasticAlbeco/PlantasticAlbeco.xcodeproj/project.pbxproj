@@ -78,6 +78,9 @@
 		479602B52D732235000BB1D1 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479602B32D732235000BB1D1 /* ProfileImageView.swift */; };
 		479602B72D732441000BB1D1 /* ForesterMentorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479602B62D732441000BB1D1 /* ForesterMentorPicker.swift */; };
 		479602B92D732A9E000BB1D1 /* ProfileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479602B82D732A9E000BB1D1 /* ProfileButton.swift */; };
+		479602C42D73355C000BB1D1 /* RewardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479602C12D73355C000BB1D1 /* RewardsView.swift */; };
+		479602C52D73355C000BB1D1 /* RewardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479602C22D73355C000BB1D1 /* RewardsViewModel.swift */; };
+		479602CB2D7339AE000BB1D1 /* StatisticCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479602C92D7339AE000BB1D1 /* StatisticCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -154,6 +157,9 @@
 		479602B32D732235000BB1D1 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 		479602B62D732441000BB1D1 /* ForesterMentorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForesterMentorPicker.swift; sourceTree = "<group>"; };
 		479602B82D732A9E000BB1D1 /* ProfileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButton.swift; sourceTree = "<group>"; };
+		479602C12D73355C000BB1D1 /* RewardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsView.swift; sourceTree = "<group>"; };
+		479602C22D73355C000BB1D1 /* RewardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewModel.swift; sourceTree = "<group>"; };
+		479602C92D7339AE000BB1D1 /* StatisticCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -443,6 +449,7 @@
 			children = (
 				4796026C2D71B559000BB1D1 /* Home */,
 				479602842D71D4DB000BB1D1 /* TasksGroup */,
+				479602C32D73355C000BB1D1 /* Rewards */,
 				479602AD2D7320E0000BB1D1 /* Profile */,
 				470D16852D70E4B8006B4A3F /* TabBar */,
 			);
@@ -586,6 +593,24 @@
 				479602B32D732235000BB1D1 /* ProfileImageView.swift */,
 				479602B62D732441000BB1D1 /* ForesterMentorPicker.swift */,
 				479602B82D732A9E000BB1D1 /* ProfileButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		479602C32D73355C000BB1D1 /* Rewards */ = {
+			isa = PBXGroup;
+			children = (
+				479602CA2D7339AE000BB1D1 /* Views */,
+				479602C12D73355C000BB1D1 /* RewardsView.swift */,
+				479602C22D73355C000BB1D1 /* RewardsViewModel.swift */,
+			);
+			path = Rewards;
+			sourceTree = "<group>";
+		};
+		479602CA2D7339AE000BB1D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				479602C92D7339AE000BB1D1 /* StatisticCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -741,6 +766,8 @@
 				470D16CD2D70E4B8006B4A3F /* ImagePicker.swift in Sources */,
 				470D16CE2D70E4B8006B4A3F /* ShareSheet.swift in Sources */,
 				470D16CF2D70E4B8006B4A3F /* NextButton.swift in Sources */,
+				479602C42D73355C000BB1D1 /* RewardsView.swift in Sources */,
+				479602C52D73355C000BB1D1 /* RewardsViewModel.swift in Sources */,
 				470D16D02D70E4B8006B4A3F /* BackButton.swift in Sources */,
 				470D16D12D70E4B8006B4A3F /* MenuPicker.swift in Sources */,
 				479602B52D732235000BB1D1 /* ProfileImageView.swift in Sources */,
@@ -755,6 +782,7 @@
 				470D16E22D70E4B8006B4A3F /* AppDelegate.swift in Sources */,
 				470D16E42D70E4B8006B4A3F /* RootContentViewModel.swift in Sources */,
 				479602782D71C4B0000BB1D1 /* CompletedTasksProgress.swift in Sources */,
+				479602CB2D7339AE000BB1D1 /* StatisticCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

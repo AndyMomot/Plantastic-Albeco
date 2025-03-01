@@ -20,7 +20,7 @@ struct TabBar: View {
                 Text("info")
                     .tag(TabBarSelectionView.info.rawValue)
                 
-                Text("rewards")
+                RewardsView()
                     .tag(TabBarSelectionView.rewards.rawValue)
                     .environmentObject(viewModel)
                 
