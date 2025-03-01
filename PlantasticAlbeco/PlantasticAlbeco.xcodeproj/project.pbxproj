@@ -81,6 +81,10 @@
 		479602C42D73355C000BB1D1 /* RewardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479602C12D73355C000BB1D1 /* RewardsView.swift */; };
 		479602C52D73355C000BB1D1 /* RewardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479602C22D73355C000BB1D1 /* RewardsViewModel.swift */; };
 		479602CB2D7339AE000BB1D1 /* StatisticCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479602C92D7339AE000BB1D1 /* StatisticCell.swift */; };
+		479602D42D733F4B000BB1D1 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479602D12D733F4B000BB1D1 /* InfoView.swift */; };
+		479602D52D733F4B000BB1D1 /* InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479602D22D733F4B000BB1D1 /* InfoViewModel.swift */; };
+		479602DB2D7342BC000BB1D1 /* FAQCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479602D92D7342BC000BB1D1 /* FAQCell.swift */; };
+		479602DD2D73456C000BB1D1 /* TipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479602DC2D73456C000BB1D1 /* TipCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -160,6 +164,10 @@
 		479602C12D73355C000BB1D1 /* RewardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsView.swift; sourceTree = "<group>"; };
 		479602C22D73355C000BB1D1 /* RewardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewModel.swift; sourceTree = "<group>"; };
 		479602C92D7339AE000BB1D1 /* StatisticCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticCell.swift; sourceTree = "<group>"; };
+		479602D12D733F4B000BB1D1 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		479602D22D733F4B000BB1D1 /* InfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewModel.swift; sourceTree = "<group>"; };
+		479602D92D7342BC000BB1D1 /* FAQCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQCell.swift; sourceTree = "<group>"; };
+		479602DC2D73456C000BB1D1 /* TipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -449,6 +457,7 @@
 			children = (
 				4796026C2D71B559000BB1D1 /* Home */,
 				479602842D71D4DB000BB1D1 /* TasksGroup */,
+				479602D32D733F4B000BB1D1 /* Info */,
 				479602C32D73355C000BB1D1 /* Rewards */,
 				479602AD2D7320E0000BB1D1 /* Profile */,
 				470D16852D70E4B8006B4A3F /* TabBar */,
@@ -615,6 +624,25 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		479602D32D733F4B000BB1D1 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				479602DA2D7342BC000BB1D1 /* Views */,
+				479602D12D733F4B000BB1D1 /* InfoView.swift */,
+				479602D22D733F4B000BB1D1 /* InfoViewModel.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		479602DA2D7342BC000BB1D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				479602D92D7342BC000BB1D1 /* FAQCell.swift */,
+				479602DC2D73456C000BB1D1 /* TipCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -736,6 +764,7 @@
 				479602702D71B6B4000BB1D1 /* UserTask.swift in Sources */,
 				470D16AF2D70E4B8006B4A3F /* TabBar.swift in Sources */,
 				470D16B12D70E4B8006B4A3F /* CustomLinearProgressView.swift in Sources */,
+				479602DD2D73456C000BB1D1 /* TipCell.swift in Sources */,
 				4796029D2D71EED3000BB1D1 /* TaskTextField.swift in Sources */,
 				470D16B22D70E4B8006B4A3F /* String+Additions.swift in Sources */,
 				470D16B32D70E4B8006B4A3F /* Images.generated.swift in Sources */,
@@ -752,12 +781,15 @@
 				470D16BE2D70E4B8006B4A3F /* User.swift in Sources */,
 				470D16BF2D70E4B8006B4A3F /* Colors.generated.swift in Sources */,
 				479602932D71EA54000BB1D1 /* AddTaskView.swift in Sources */,
+				479602DB2D7342BC000BB1D1 /* FAQCell.swift in Sources */,
 				470D16C02D70E4B8006B4A3F /* Fonts.generated.swift in Sources */,
 				470D16C12D70E4B8006B4A3F /* NotificationManager.swift in Sources */,
 				4796028E2D71DCC9000BB1D1 /* TaskFilter.swift in Sources */,
 				470D16C22D70E4B8006B4A3F /* OnboardingViewTabView.swift in Sources */,
 				470D16C32D70E4B8006B4A3F /* CustomNavigationView.swift in Sources */,
 				4796029F2D71F148000BB1D1 /* UIImage+Additions.swift in Sources */,
+				479602D42D733F4B000BB1D1 /* InfoView.swift in Sources */,
+				479602D52D733F4B000BB1D1 /* InfoViewModel.swift in Sources */,
 				479602B72D732441000BB1D1 /* ForesterMentorPicker.swift in Sources */,
 				470D16C52D70E4B8006B4A3F /* Date+Additions.swift in Sources */,
 				470D16C62D70E4B8006B4A3F /* UINavigationController+Additions.swift in Sources */,

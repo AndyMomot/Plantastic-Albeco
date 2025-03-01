@@ -17,7 +17,7 @@ struct TabBar: View {
                 TasksView()
                     .tag(TabBarSelectionView.tasks.rawValue)
                 
-                Text("info")
+                InfoView()
                     .tag(TabBarSelectionView.info.rawValue)
                 
                 RewardsView()

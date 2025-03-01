@@ -38,10 +38,16 @@ struct TabBarCustomView: View {
                         Spacer()
                         if isSelected {
                             Image(item.selectedImageName)
-                                .transition(AnyTransition.scale.animation(.easeInOut))
+                                .transition(.asymmetric(
+                                    insertion: AnyTransition.scale.animation(.easeIn),
+                                    removal: .opacity
+                                ))
                         } else {
                             Image(item.imageName)
-                                .transition(AnyTransition.scale.animation(.easeInOut))
+                                .transition(.asymmetric(
+                                    insertion: AnyTransition.scale.animation(.easeIn),
+                                    removal: .opacity
+                                ))
                         }
                     }
                 }
