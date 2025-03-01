@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -682,6 +682,7 @@
 				};
 			};
 			buildConfigurationList = 470D15EB2D70E3C5006B4A3F /* Build configuration list for PBXProject "PlantasticAlbeco" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -690,7 +691,6 @@
 			);
 			mainGroup = 470D15E72D70E3C5006B4A3F;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 470D15F12D70E3C6006B4A3F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
