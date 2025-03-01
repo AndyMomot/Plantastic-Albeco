@@ -76,8 +76,11 @@ struct OnboardingView: View {
                 
                 NextButton(title: item.nextButtonTitle) {
                     if item.rawValue == item.lastIndex {
-                        DispatchQueue.main.async {
-                            rootViewModel.setFlow(.main)
+                        Task {
+                            await viewModel.initUser()
+                            await MainActor.run {
+                                rootViewModel.setFlow(.main)
+                            }
                         }
                     } else {
                         withAnimation {

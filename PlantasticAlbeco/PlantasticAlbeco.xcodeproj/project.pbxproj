@@ -73,6 +73,11 @@
 		479602A12D71F6E5000BB1D1 /* TaskTypePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479602A02D71F6E5000BB1D1 /* TaskTypePicker.swift */; };
 		479602A32D71FAA6000BB1D1 /* TaskDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479602A22D71FAA6000BB1D1 /* TaskDatePicker.swift */; };
 		479602A52D71FCDA000BB1D1 /* TaskAttachments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479602A42D71FCDA000BB1D1 /* TaskAttachments.swift */; };
+		479602AE2D7320E0000BB1D1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479602AB2D7320E0000BB1D1 /* ProfileView.swift */; };
+		479602AF2D7320E0000BB1D1 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479602AC2D7320E0000BB1D1 /* ProfileViewModel.swift */; };
+		479602B52D732235000BB1D1 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479602B32D732235000BB1D1 /* ProfileImageView.swift */; };
+		479602B72D732441000BB1D1 /* ForesterMentorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479602B62D732441000BB1D1 /* ForesterMentorPicker.swift */; };
+		479602B92D732A9E000BB1D1 /* ProfileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479602B82D732A9E000BB1D1 /* ProfileButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,6 +149,11 @@
 		479602A02D71F6E5000BB1D1 /* TaskTypePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTypePicker.swift; sourceTree = "<group>"; };
 		479602A22D71FAA6000BB1D1 /* TaskDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDatePicker.swift; sourceTree = "<group>"; };
 		479602A42D71FCDA000BB1D1 /* TaskAttachments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAttachments.swift; sourceTree = "<group>"; };
+		479602AB2D7320E0000BB1D1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		479602AC2D7320E0000BB1D1 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		479602B32D732235000BB1D1 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
+		479602B62D732441000BB1D1 /* ForesterMentorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForesterMentorPicker.swift; sourceTree = "<group>"; };
+		479602B82D732A9E000BB1D1 /* ProfileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -433,6 +443,7 @@
 			children = (
 				4796026C2D71B559000BB1D1 /* Home */,
 				479602842D71D4DB000BB1D1 /* TasksGroup */,
+				479602AD2D7320E0000BB1D1 /* Profile */,
 				470D16852D70E4B8006B4A3F /* TabBar */,
 			);
 			path = Main;
@@ -559,6 +570,26 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		479602AD2D7320E0000BB1D1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				479602B42D732235000BB1D1 /* Views */,
+				479602AB2D7320E0000BB1D1 /* ProfileView.swift */,
+				479602AC2D7320E0000BB1D1 /* ProfileViewModel.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		479602B42D732235000BB1D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				479602B32D732235000BB1D1 /* ProfileImageView.swift */,
+				479602B62D732441000BB1D1 /* ForesterMentorPicker.swift */,
+				479602B82D732A9E000BB1D1 /* ProfileButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -670,6 +701,9 @@
 			files = (
 				470D169D2D70E4B8006B4A3F /* SwiftUIViewWebView.swift in Sources */,
 				470D16A12D70E4B8006B4A3F /* Double+Additions.swift in Sources */,
+				479602AE2D7320E0000BB1D1 /* ProfileView.swift in Sources */,
+				479602B92D732A9E000BB1D1 /* ProfileButton.swift in Sources */,
+				479602AF2D7320E0000BB1D1 /* ProfileViewModel.swift in Sources */,
 				4796026D2D71B559000BB1D1 /* HomeView.swift in Sources */,
 				4796026E2D71B559000BB1D1 /* HomeViewModel.swift in Sources */,
 				470D16A72D70E4B8006B4A3F /* CustomTextField.swift in Sources */,
@@ -699,6 +733,7 @@
 				470D16C22D70E4B8006B4A3F /* OnboardingViewTabView.swift in Sources */,
 				470D16C32D70E4B8006B4A3F /* CustomNavigationView.swift in Sources */,
 				4796029F2D71F148000BB1D1 /* UIImage+Additions.swift in Sources */,
+				479602B72D732441000BB1D1 /* ForesterMentorPicker.swift in Sources */,
 				470D16C52D70E4B8006B4A3F /* Date+Additions.swift in Sources */,
 				470D16C62D70E4B8006B4A3F /* UINavigationController+Additions.swift in Sources */,
 				470D16CA2D70E4B8006B4A3F /* SceneDelegate.swift in Sources */,
@@ -708,6 +743,7 @@
 				470D16CF2D70E4B8006B4A3F /* NextButton.swift in Sources */,
 				470D16D02D70E4B8006B4A3F /* BackButton.swift in Sources */,
 				470D16D12D70E4B8006B4A3F /* MenuPicker.swift in Sources */,
+				479602B52D732235000BB1D1 /* ProfileImageView.swift in Sources */,
 				479602A52D71FCDA000BB1D1 /* TaskAttachments.swift in Sources */,
 				470D16D22D70E4B8006B4A3F /* DefaultsService.swift in Sources */,
 				470D16D52D70E4B8006B4A3F /* FileManager+Image.swift in Sources */,

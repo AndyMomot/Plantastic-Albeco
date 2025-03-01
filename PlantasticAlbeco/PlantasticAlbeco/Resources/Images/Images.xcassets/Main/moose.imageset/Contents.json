@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "moose.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

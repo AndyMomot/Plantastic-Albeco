@@ -12,6 +12,10 @@ extension OnboardingView {
         let privacyPolicyURL = URL(string: "https://www.google.com")
         @Published var showPrivacy = false
         @Published var showLogin = false
+        
+        func initUser() async {
+            DefaultsService.shared.user = .init(userName: "", foresterMentor: "")
+        }
     }
     
     enum OnboardingItem: Int, CaseIterable {

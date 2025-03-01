@@ -24,7 +24,7 @@ struct TabBar: View {
                     .tag(TabBarSelectionView.rewards.rawValue)
                     .environmentObject(viewModel)
                 
-                Text("profile")
+                ProfileView()
                     .tag(TabBarSelectionView.profile.rawValue)
                     .environmentObject(viewModel)
             }
